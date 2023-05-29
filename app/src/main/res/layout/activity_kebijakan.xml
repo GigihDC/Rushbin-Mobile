@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KebijakanActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardElevation="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Kebijakan Kami"
+            android:fontFamily="@font/exo2_semibold"
+            android:textSize="24sp"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:text="          Selamat datang di aplikasi Rushbin. ketentuan layanan ini mengatur penggunaan Rushbin itu sendiri. Kami memilki hak untuk dapat mengubah, menambahkan atau mengurangi ketentuan tanpa persetujuan dari user. Kami menyarankan supaya anda secara berkala membaca dan mengerti ketentuan layanan Rushbin sebelum menggunakannya. ketika anda sudah memahami dan mengerti ketentuan privasi dan ketentuan penggunaan layanan Rushbin. Syarat dan ketentuan ini berlaku salama aplikasi Rushbin beroperasi."
+        android:textSize="15sp"
+        android:fontFamily="@font/exo2_regular"/>
+
+</LinearLayout>

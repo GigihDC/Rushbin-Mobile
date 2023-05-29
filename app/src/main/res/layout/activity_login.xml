@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_curve"
+    android:backgroundTint="@color/primary_color"
+    android:backgroundTintMode="screen"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Selamat Datang"
+        android:textSize="36sp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/exo2_semibold"
+        android:textColor="@android:color/black"
+        android:id="@+id/login_txt1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/login_txt1"
+        android:text="Silahkan Login Terlebih Dahulu"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/exo2_regular"
+        android:textColor="@android:color/black"
+        android:id="@+id/login_txt2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:layout_below="@id/login_txt2"
+        android:id="@+id/ly1">
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/costum_edittext"
+            android:fontFamily="@font/exo2_regular"
+            android:hint="Email"
+            android:textColorHint="@color/black"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="10dp"
+            android:inputType="text"
+            android:paddingLeft="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:hint="Passsword"
+            android:textColorHint="@color/black"
+            android:drawableLeft="@drawable/ic_outline_lock_24"
+            android:drawablePadding="10dp"
+            app:endIconMode="password_toggle"
+            android:inputType="textPassword"
+            android:fontFamily="@font/exo2_regular"
+            android:background="@drawable/costum_edittext"
+            android:paddingLeft="15dp"
+            android:id="@+id/passwordEditText"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ly1"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:background="@drawable/btn_cornerradius"
+        android:fontFamily="@font/exo2_semibold"
+        android:textColor="@android:color/white"
+        android:width="300dp"
+        android:textSize="18sp"
+        android:onClick="login"
+        android:id="@+id/loginButton"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum Punya Akun? "
+            android:textColor="@color/black"
+            android:fontFamily="@font/exo2_regular"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:fontFamily="@font/exo2_semibold"
+            android:textSize="14sp"
+            android:textColor="@color/purple_500"
+            android:clickable="true"
+            android:id="@+id/btn_reg"/>
+    </LinearLayout>
+</RelativeLayout>

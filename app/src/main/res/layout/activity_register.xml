@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:id="@+id/r_tombolKembali"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Selamat Datang"
+        android:textSize="32sp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/exo2_semibold"
+        android:textColor="@android:color/black"
+        android:id="@+id/register_txt1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/register_txt1"
+        android:text="Silahkan Registrasi"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/exo2_regular"
+        android:textColor="@android:color/black"
+        android:id="@+id/resigter_txt2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:layout_below="@id/resigter_txt2"
+        android:id="@+id/ly1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Nama Lengkap"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:inputType="text"
+            android:fontFamily="@font/exo2_regular"
+            android:background="@drawable/costum_edittext"
+            android:drawablePadding="10dp"
+            android:paddingLeft="15dp"
+            android:id="@+id/register_nama"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:hint="Email"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="10dp"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/exo2_regular"
+            android:background="@drawable/costum_edittext"
+            android:paddingLeft="15dp"
+            android:id="@+id/register_email"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:hint="Passsword"
+            android:drawableLeft="@drawable/ic_outline_lock_24"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            android:fontFamily="@font/exo2_regular"
+            android:background="@drawable/costum_edittext"
+            android:paddingLeft="15dp"
+            android:id="@+id/register_pass"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:hint="Konfirmasi Password"
+            android:drawableLeft="@drawable/ic_outline_lock_24"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            android:fontFamily="@font/exo2_regular"
+            android:background="@drawable/costum_edittext"
+            android:paddingLeft="15dp"
+            android:id="@+id/register_pass_2"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Register"
+        android:background="@drawable/btn_cornerradius"
+        android:fontFamily="@font/exo2_semibold"
+        android:textColor="@android:color/white"
+        android:width="300dp"
+        android:textSize="18sp"
+        android:id="@+id/r_btnReg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r_btnReg"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudah Punya Akun? "
+            android:textColor="@color/black"
+            android:fontFamily="@font/exo2_regular"
+            android:textSize="14sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:fontFamily="@font/exo2_semibold"
+            android:textSize="14sp"
+            android:textColor="@color/primary_color"
+            android:clickable="true"
+            android:id="@+id/r_tombolLogin"/>
+    </LinearLayout>
+</LinearLayout>
